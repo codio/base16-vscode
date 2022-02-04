@@ -1,5 +1,6 @@
 scheme: "the-matrix"
 author: "codio"
+style: "dark"
 base00: "000000" # Default Background
 base01: "0d0d0d" # Lighter Background (Used for status bars, line number and folding marks)
 base02: "38566F" # Selection Background

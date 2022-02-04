@@ -29,7 +29,8 @@ async function loadSourceThemes(schemasPath) {
 
 function applyTheme(data) {
   const newTheme = {
-    scheme: data.scheme
+    scheme: data.scheme,
+    style: data.style,
   }
   for (const field in data) {
     if (_.startsWith(field, 'base')) {
@@ -49,8 +50,7 @@ async function getTemplate(theme) {
   const content = await fs.readFile(path.join('templates', 'vscode', 'templates', `${template}.mustache`), 'utf-8')
   return content
 }
-function isDark(theme) {
- 
+function isDark(theme) { 
   if (_.includes(theme.scheme, 'dark') || _.includes(theme.scheme, 'night')) {
     return true
   }

@@ -1,5 +1,6 @@
 scheme: "earthsong"
 author: "codio"
+style: "dark"
 base00: "36312C" # Default Background
 base01: "433d37" # Lighter Background (Used for status bars, line number and folding marks)
 base02: "552611" # Selection Background

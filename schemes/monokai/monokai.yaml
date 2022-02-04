@@ -1,5 +1,6 @@
 scheme: "monokai"
 author: "codio"
+style: "dark"
 base00: "272822" # Default Background
 base01: "36372f" # Lighter Background (Used for status bars, line number and folding marks)
 base02: "49483E" # Selection Background

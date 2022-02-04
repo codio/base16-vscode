@@ -1,4 +1,5 @@
 scheme: "frontier"
+style: "dark"
 author: "codio"
 base00: "36312C" # Default Background
 base01: "433d37" # Lighter Background (Used for status bars, line number and folding marks)

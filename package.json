@@ -9,7 +9,7 @@
     "mustache": "^4.2.0"
   },
   "scripts": {
-    "build": "base16-builder"
+    "build": "node src/index.js"
   },
   "type": "module"
 }

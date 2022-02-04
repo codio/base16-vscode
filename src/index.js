@@ -50,7 +50,8 @@ async function getTemplate(theme) {
   return content
 }
 function isDark(theme) {
-  if (_.includes('theme', 'dark') || _.includes('theme', 'night')) {
+ 
+  if (_.includes(theme.scheme, 'dark') || _.includes(theme.scheme, 'night')) {
     return true
   }
   return theme['style'] == 'dark'
@@ -58,12 +59,11 @@ function isDark(theme) {
 
 async function main() {
   const sourceThemes = await loadSourceThemes(SCHEMES_PATH)
-//  console.log(sourceThemes)
   for (const theme of sourceThemes) {
     const compiled = Mustache.render(await getTemplate(theme), theme)
     const themeReady = convertTheme(JSON.parse(compiled))
     themeReady['inherit'] = true
-    themeReady['base'] = 'vs'// isDark(theme) ? 'vs-dark' : 'vs'
+    themeReady['base'] = isDark(theme) ? 'vs-dark' : 'vs'
     const themeString = JSON.stringify(themeReady, undefined, ' ')
     await fs.writeFile(path.join(OUT, `${theme.scheme}.json`), themeString)
   }

@@ -63,7 +63,7 @@ async function main() {
     const themeReady = convertTheme(JSON.parse(compiled))
     themeReady['inherit'] = true
     themeReady['base'] = isDark(theme) ? 'vs-dark' : 'vs'
-    const themeString = JSON.stringify(themeReady, undefined, ' ')
+    const themeString = JSON.stringify(themeReady, undefined, 2)
     await fs.writeFile(path.join(OUT, `${theme.scheme}.json`), themeString)
   }
   

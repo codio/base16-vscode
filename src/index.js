@@ -3,7 +3,6 @@ import { promises as fs } from 'fs'
 import path from 'path'
 import _ from 'lodash'
 import yaml from 'js-yaml'
-import mustache from 'mustache'
 import Mustache from 'mustache'
 
 const SCHEMES_PATH = 'schemes'
@@ -38,7 +37,7 @@ function applyTheme(data) {
     }
   }
 
-  newTheme['baseWarn'] = data.baseWarn || 'ffcc00'
+  newTheme['baseWarn'] = data.baseWarn || 'd19d00'
   newTheme['baseErr'] = data.baseErr || 'cc3300'
   newTheme['baseInfo'] = data.baseInfo || 'bbbbbb'
   newTheme['baseHint'] = data.baseWarn || '99cc33'

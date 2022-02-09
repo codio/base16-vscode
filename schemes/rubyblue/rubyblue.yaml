@@ -1,5 +1,6 @@
 scheme: "rubyblue"
 author: "codio"
+style: "dark"
 base00: "112435" # Default Background
 base01: "183249" # Lighter Background (Used for status bars, line number and folding marks)
 base02: "38566F" # Selection Background

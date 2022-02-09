@@ -1,5 +1,6 @@
 scheme: "peacock"
 author: "codio"
+style: "dark"
 base00: "2b2a27" # Default Background
 base01: "383733" # Lighter Background (Used for status bars, line number and folding marks)
 base02: "991c00" # Selection Background

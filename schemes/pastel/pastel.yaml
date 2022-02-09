@@ -1,5 +1,6 @@
 scheme: "pastel"
 author: "codio"
+style: "dark"
 base00: "222222" # Default Background
 base01: "2e2e2e" # Lighter Background (Used for status bars, line number and folding marks)
 base02: "008D62" # Selection Background

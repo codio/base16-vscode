@@ -1,4 +1,5 @@
 scheme: "bold"
+style: "dark"
 author: "codio"
 base00: "2a2626" # Default Background
 base01: "3e3838" # Lighter Background (Used for status bars, line number and folding marks)
